@@ -1,3 +1,8 @@
+/* Hero block */
+.hero-insights-container {
+  padding: 0;
+}
+
 .hero-insights-container .hero-insights-wrapper {
   max-width: unset;
   padding: 0;
@@ -5,33 +10,20 @@
 
 .hero-insights {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
-
-.hero-insights h1,
-.hero-insights h2,
-.hero-insights h3,
-.hero-insights h4,
-.hero-insights h5,
-.hero-insights h6,
-.hero-insights p {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero-insights.no-image * {
-  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 360px;
+  padding: var(--spacing-xl) var(--spacing-m);
+  overflow: hidden;
 }
 
 .hero-insights picture {
   position: absolute;
   z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
 }
 
 .hero-insights img {
@@ -40,8 +32,108 @@
   height: 100%;
 }
 
+.hero-insights h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: #fff;
+  margin: 0 0 var(--spacing-m);
+}
+
+.hero-insights p {
+  font-size: var(--body-font-size-l);
+  color: rgb(255 255 255 / 80%);
+  max-width: 700px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Sub-navigation bar (default content before hero block) */
+.hero-insights-container > .default-content-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #460073;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+  overflow: auto hidden;
+  scrollbar-width: none;
+  white-space: nowrap;
+  gap: 0;
+}
+
+.hero-insights-container > .default-content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* "Reinvention topics" label */
+.hero-insights-container > .default-content-wrapper > p:first-child {
+  margin: 0;
+  padding-right: 24px;
+  flex-shrink: 0;
+  border-right: 1px solid rgb(255 255 255 / 30%);
+  margin-right: 8px;
+}
+
+.hero-insights-container > .default-content-wrapper > p:first-child a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Topic links row (second paragraph) */
+.hero-insights-container > .default-content-wrapper > p:nth-child(2) {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.hero-insights-container > .default-content-wrapper > p:nth-child(2) a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  transition: color var(--transition-fast);
+}
+
+.hero-insights-container > .default-content-wrapper > p:nth-child(2) a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Hide "Expand Menu" text and duplicated links (3rd and 4th paragraphs) */
+.hero-insights-container > .default-content-wrapper > p:nth-child(3),
+.hero-insights-container > .default-content-wrapper > p:nth-child(4) {
+  display: none;
+}
+
+/* Mobile adjustments */
+@media (width < 900px) {
+  .hero-insights-container > .default-content-wrapper {
+    padding: 0 16px;
+  }
+
+  .hero-insights {
+    min-height: 280px;
+    padding: var(--spacing-l) var(--spacing-m);
+  }
+}
+
 @media (width >= 900px) {
   .hero-insights {
-    padding: 40px 32px;
+    min-height: 400px;
+    padding: var(--spacing-xxl) 48px;
   }
 }
