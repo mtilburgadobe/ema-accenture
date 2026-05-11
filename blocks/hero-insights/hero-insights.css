@@ -6,6 +6,7 @@
 .hero-insights-container .hero-insights-wrapper {
   max-width: unset;
   padding: 0;
+  margin-top: 52px;
 }
 
 .hero-insights {
@@ -59,9 +60,11 @@
 
 /* Sub-navigation bar (default content before hero block) */
 .hero-insights-container > .default-content-wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  z-index: 100;
   background-color: #460073;
   height: 52px;
   display: flex;
@@ -71,6 +74,8 @@
   scrollbar-width: none;
   white-space: nowrap;
   gap: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-insights-container > .default-content-wrapper::-webkit-scrollbar {
@@ -131,6 +136,8 @@
 @media (width < 900px) {
   .hero-insights-container > .default-content-wrapper {
     padding: 0 16px;
+    left: 0;
+    right: 0;
   }
 
   .hero-insights {
