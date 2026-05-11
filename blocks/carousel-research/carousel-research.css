@@ -1,3 +1,8 @@
+.carousel-research {
+  position: relative;
+  overflow: hidden;
+}
+
 .carousel-research .carousel-research-slides-container {
   position: relative;
 }
@@ -11,9 +16,12 @@
 
 .carousel-research .carousel-research-slides {
   display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  overflow: scroll clip;
+  scrollbar-width: none;
+  padding: 0 var(--spacing-m);
 }
 
 .carousel-research .carousel-research-slides::-webkit-scrollbar {
@@ -21,133 +29,147 @@
 }
 
 .carousel-research .carousel-research-slide {
-  flex: 0 0 100%;
+  flex: 0 0 280px;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   position: relative;
-  width: 100%;
-  min-height: min(50vw, calc(100dvh - var(--header-height)));
+  height: 424px;
+  background-color: #000;
+  overflow: hidden;
 }
 
-.carousel-research .carousel-research-slide:has(.carousel-research-slide-content[data-align='center']) {
-  align-items: center;
-}
-
-.carousel-research .carousel-research-slide:has(.carousel-research-slide-content[data-align='right']) {
-  align-items: flex-end;
-}
-
-.carousel-research .carousel-research-slide .carousel-research-slide-image picture {
+.carousel-research .carousel-research-slide-image {
   position: absolute;
   inset: 0;
 }
 
-.carousel-research .carousel-research-slide .carousel-research-slide-image picture > img {
+.carousel-research .carousel-research-slide-image picture {
+  display: block;
   height: 100%;
+}
+
+.carousel-research .carousel-research-slide-image img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.carousel-research .carousel-research-slide .carousel-research-slide-content {
-  z-index: 1;
-  margin: 68px;
-  padding: 16px;
-  color: white;
-  background-color: rgb(19 19 19 / 75%);
+.carousel-research .carousel-research-slide-content {
   position: relative;
-  width: var(--slide-content-width, auto);
-}
-
-.carousel-research .carousel-research-slide-indicators {
+  z-index: 1;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 12px;
-  padding: 12px;
-  background-color: var(--light-color);
-  line-height: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: var(--spacing-m);
+  background: linear-gradient(to top, rgb(0 0 0 / 80%) 0%, rgb(0 0 0 / 40%) 50%, transparent 100%);
 }
 
-.carousel-research .carousel-research-slide-indicator button {
-  width: 24px;
-  height: 24px;
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
-  background-color: #dadada;
-  transition: background-color 0.2s;
+.carousel-research .carousel-research-slide-content em {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: var(--spacing-xs);
 }
 
-.carousel-research .carousel-research-slide-indicator button:disabled,
-.carousel-research .carousel-research-slide-indicator button:hover,
-.carousel-research .carousel-research-slide-indicator button:focus-visible {
-  background-color: var(--text-color);
+.carousel-research .carousel-research-slide-content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 var(--spacing-s);
+}
+
+.carousel-research .carousel-research-slide-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(255 255 255 / 85%);
+  margin: 0 0 var(--spacing-s);
+}
+
+.carousel-research .carousel-research-slide-content a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.carousel-research .carousel-research-slide-content a:hover {
+  color: var(--accent-color);
 }
 
 .carousel-research .carousel-research-navigation-buttons {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 12px;
-  right: 12px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
+  gap: var(--spacing-s);
+  margin-top: var(--spacing-m);
+  padding: 0 var(--spacing-m);
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
 .carousel-research .carousel-research-navigation-buttons button {
-  position: relative;
-  width: 44px;
-  height: 44px;
-  margin: 0;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
-  background-color: rgb(19 19 19 / 25%);
-  transition: background-color 0.2s;
+  margin: 0;
+  position: relative;
+  transition: border-color var(--transition-fast);
 }
 
-.carousel-research .carousel-research-navigation-buttons button:hover,
-.carousel-research .carousel-research-navigation-buttons button:focus-visible {
-  background-color: rgb(19 19 19 / 75%);
+.carousel-research .carousel-research-navigation-buttons button:hover {
+  border-color: var(--accent-color);
 }
 
 .carousel-research .carousel-research-navigation-buttons button::after {
   display: block;
-  content: '';
+  content: "";
   border: 2px solid;
   border-bottom: 0;
   border-left: 0;
-  height: 12px;
-  width: 12px;
+  height: 8px;
+  width: 8px;
   position: absolute;
   top: 50%;
-  left: calc(50% + 2px);
+  left: calc(50% + 1px);
   transform: translate(-50%, -50%) rotate(-135deg);
 }
 
 .carousel-research .carousel-research-navigation-buttons button.slide-next::after {
   transform: translate(-50%, -50%) rotate(45deg);
-  left: calc(50% - 2px);
+  left: calc(50% - 1px);
+}
+
+.carousel-research .carousel-research-slide-indicators {
+  display: none;
 }
 
 @media (width >= 600px) {
+  .carousel-research .carousel-research-slide {
+    flex: 0 0 332px;
+  }
+
+  .carousel-research .carousel-research-slides {
+    padding: 0 48px;
+  }
+
   .carousel-research .carousel-research-navigation-buttons {
-    left: 24px;
-    right: 24px;
+    padding: 0 48px;
   }
+}
 
-  .carousel-research .carousel-research-slide .carousel-research-slide-content {
-    --slide-content-width: calc((100% - 184px) / 2);
-
-    margin: 92px;
-  }
-
-  .carousel-research .carousel-research-slide .carousel-research-slide-content[data-align='justify'] {
-    --slide-content-width: auto;
+@media (width >= 1200px) {
+  .carousel-research .carousel-research-slide {
+    flex: 0 0 340px;
   }
 }
