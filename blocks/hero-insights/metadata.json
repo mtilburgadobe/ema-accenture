@@ -1,0 +1,40 @@
+{
+  "variantName": "hero-insights",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-11T07:23:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en/insights",
+    "originPage": "insights hub page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "insights-hub-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "content hub landing pages with gradient backgrounds",
+      "insights and research index pages",
+      "thought leadership hub pages",
+      "topic overview pages with minimal hero text"
+    ],
+    "notSuitableFor": [
+      "pages requiring video backgrounds",
+      "hero sections with multiple CTAs",
+      "product detail pages needing complex hero layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en/insights"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T07:23:00.000Z"
+  }
+}

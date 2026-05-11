@@ -151,6 +151,95 @@
           ]
         }
       ]
+    },
+    {
+      "name": "insights",
+      "urls": ["https://www.accenture.com/ch-en/insights"],
+      "description": "Accenture Insights hub page with featured research, perspectives, and thought leadership content",
+      "blocks": [
+        {
+          "name": "hero-insights",
+          "instances": [".rad-homepage-hero"]
+        },
+        {
+          "name": "carousel-research",
+          "instances": [".tilecardcarouselv2 .rad-grid-card-carousel"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": ".rad-homepage-hero",
+          "style": null,
+          "blocks": ["hero-insights"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Enterprise",
+          "selector": "#block-enterprise",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-enterprise h2", "#block-enterprise p"]
+        },
+        {
+          "id": "section-3",
+          "name": "Digital Core",
+          "selector": "#block-digital-core",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-digital-core h2", "#block-digital-core p"]
+        },
+        {
+          "id": "section-4",
+          "name": "Talent",
+          "selector": "#block-talent",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-talent h2", "#block-talent p"]
+        },
+        {
+          "id": "section-5",
+          "name": "Supply Chain and Engineering",
+          "selector": "#block-supply-chain-engineering",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-supply-chain-engineering h2", "#block-supply-chain-engineering p"]
+        },
+        {
+          "id": "section-6",
+          "name": "Customer",
+          "selector": "#block-customer",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-customer h2", "#block-customer p"]
+        },
+        {
+          "id": "section-7",
+          "name": "Cybersecurity",
+          "selector": "#block-cybersecurity",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-cybersecurity h2", "#block-cybersecurity p"]
+        },
+        {
+          "id": "section-8",
+          "name": "Finance",
+          "selector": "#block-finance",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-finance h2", "#block-finance p"]
+        },
+        {
+          "id": "section-9",
+          "name": "Industry",
+          "selector": "#block-industry",
+          "style": null,
+          "blocks": ["carousel-research"],
+          "defaultContent": ["#block-industry h2", "#block-industry p"]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-research",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-05-11T07:23:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en/insights",
+    "originPage": "insights hub page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "research-content-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + label + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "research report and insight carousels",
+      "thought leadership content showcases",
+      "topic-based content galleries with categorized items",
+      "horizontally scrolling content card collections"
+    ],
+    "notSuitableFor": [
+      "single large-format case study slideshows",
+      "image-only galleries without text content",
+      "simple product feature carousels"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en/insights"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T07:23:00.000Z"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.accenture.com/ch-en/insights",
+  "path": "ch-en/insights",
+  "timestamp": "2026-05-11T07:29:45.882Z",
+  "title": "What We Think | Business & Technology Insights | Accenture",
+  "template": "insights",
+  "blocks": [
+    "hero-insights",
+    "carousel-research",
+    "carousel-research",
+    "carousel-research",
+    "carousel-research",
+    "carousel-research",
+    "carousel-research",
+    "carousel-research",
+    "carousel-research"
+  ]
+}
