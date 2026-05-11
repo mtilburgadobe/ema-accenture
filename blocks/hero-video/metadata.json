@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-video",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-11T06:19:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en",
+    "originPage": "corporate homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "corporate-hero",
+    "imagePattern": "video"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + paragraph + CTA",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero sections with video backgrounds",
+      "landing pages with dramatic visual impact",
+      "corporate brand pages"
+    ],
+    "notSuitableFor": [
+      "article pages with simple headers",
+      "product detail pages",
+      "pages with static image heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T06:19:00.000Z"
+  }
+}

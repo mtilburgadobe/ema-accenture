@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-cta",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-11T06:19:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en",
+    "originPage": "corporate homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "careers-cta",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + eyebrow + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "careers call-to-action sections",
+      "promotional split-layout sections",
+      "image + text CTA blocks",
+      "recruitment and hiring banners"
+    ],
+    "notSuitableFor": [
+      "multi-column data comparisons",
+      "side-by-side quote layouts",
+      "feature comparison grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T06:19:00.000Z"
+  }
+}

@@ -1,0 +1,69 @@
+.columns-cta > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+  align-items: center;
+}
+
+.columns-cta > div > div {
+  flex: 1;
+}
+
+.columns-cta > div > div:first-child picture {
+  display: block;
+}
+
+.columns-cta > div > div:first-child img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.columns-cta > div > div:last-child p {
+  font-size: var(--body-font-size-m);
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.columns-cta > div > div:last-child p:first-child {
+  font-size: var(--body-font-size-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.columns-cta > div > div:last-child h3 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 var(--spacing-s);
+}
+
+.columns-cta .button-wrapper a {
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.columns-cta .button-wrapper a:hover {
+  color: var(--accent-color);
+}
+
+@media (width >= 900px) {
+  .columns-cta > div {
+    flex-direction: row;
+    gap: var(--spacing-xl);
+  }
+
+  .columns-cta > div > div:first-child {
+    flex: 0 0 55%;
+  }
+
+  .columns-cta > div > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-quote",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-11T06:19:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en",
+    "originPage": "corporate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "executive-quote",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + quote text + attribution",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "executive quote sections with portrait photo",
+      "testimonial layouts with image and text",
+      "leadership spotlight sections"
+    ],
+    "notSuitableFor": [
+      "multi-column content layouts",
+      "feature comparison sections",
+      "data-heavy side-by-side layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T06:19:00.000Z"
+  }
+}

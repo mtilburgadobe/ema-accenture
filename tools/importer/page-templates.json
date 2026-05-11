@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.accenture.com/ch-en"
+      ],
+      "description": "Accenture Switzerland homepage with hero, featured content sections, and corporate navigation",
+      "blocks": [
+        {
+          "name": "hero-video",
+          "instances": [
+            "#reinvent-hero .hero_custom"
+          ]
+        },
+        {
+          "name": "cards-research",
+          "instances": [
+            ".tilegridv2 .rad-card-grid"
+          ]
+        },
+        {
+          "name": "columns-quote",
+          "instances": [
+            ".carousel-block #carouselslide-aa3197550e"
+          ]
+        },
+        {
+          "name": "carousel-casestudy",
+          "instances": [
+            ".client-carousel #carousel-719ce40a65"
+          ]
+        },
+        {
+          "name": "cards-awards",
+          "instances": [
+            ".floatingcardblock .rad-awards"
+          ]
+        },
+        {
+          "name": "columns-cta",
+          "instances": [
+            ".mixedmediatextblock .rad-mixed-media-and-text"
+          ]
+        },
+        {
+          "name": "cards-news",
+          "instances": [
+            ".rad-news .rad-news-container"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "#reinvent-hero",
+          "style": null,
+          "blocks": [
+            "hero-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Content Card Grid",
+          "selector": ".tilegridv2.tilegrid",
+          "style": "dark",
+          "blocks": [
+            "cards-research"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Executive Quote",
+          "selector": ".layoutdivision .carousel-block",
+          "style": "dark",
+          "blocks": [
+            "columns-quote"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "360 Value Header",
+          "selector": ".header.teaser #header-4db5a9b6f2",
+          "style": "dark",
+          "blocks": [],
+          "defaultContent": [
+            ".rad-header__headline",
+            ".rad-header__sub-headline",
+            ".rad-header__cta-button a"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Client Case Studies Carousel",
+          "selector": ".client-carousel",
+          "style": "dark",
+          "blocks": [
+            "carousel-casestudy"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Awards and Recognition",
+          "selector": ".floatingcardblock",
+          "style": "dark",
+          "blocks": [
+            "cards-awards"
+          ],
+          "defaultContent": [
+            ".rad-awards__headline"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "Careers",
+          "selector": ".mixedmediatextblock",
+          "style": "dark",
+          "blocks": [
+            "columns-cta"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Accenture News",
+          "selector": ".rad-news",
+          "style": "dark",
+          "blocks": [
+            "cards-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "Foresight App Banner",
+          "selector": ".radforesight .rad-foresight-banner",
+          "style": "dark-purple",
+          "blocks": [],
+          "defaultContent": [
+            ".rad-foresight-banner__headline",
+            ".rad-foresight-banner__subheader",
+            ".rad-foresight-banner__buttons"
+          ]
+        }
+      ]
+    }
+  ]
+}

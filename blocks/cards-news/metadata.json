@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-news",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-11T06:19:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en",
+    "originPage": "corporate homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "news-listing",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "date + heading + link",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "news listing sections",
+      "press release cards",
+      "recent updates and announcements",
+      "blog post listings without images"
+    ],
+    "notSuitableFor": [
+      "featured content with images",
+      "product showcase cards",
+      "team member profiles"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T06:19:00.000Z"
+  }
+}

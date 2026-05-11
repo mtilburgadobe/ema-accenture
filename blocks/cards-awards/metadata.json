@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-awards",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-11T06:19:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en",
+    "originPage": "corporate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "awards-showcase",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "awards and recognition sections",
+      "achievement highlights without images",
+      "accolade and certification listings",
+      "trust indicator cards"
+    ],
+    "notSuitableFor": [
+      "content cards with images",
+      "product feature cards",
+      "team member profiles"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T06:19:00.000Z"
+  }
+}

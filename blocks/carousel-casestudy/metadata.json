@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-casestudy",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-05-11T06:19:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en",
+    "originPage": "corporate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "case-study-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "case study showcases with large images",
+      "client success story carousels",
+      "featured project slideshows",
+      "portfolio presentations"
+    ],
+    "notSuitableFor": [
+      "simple image galleries without text",
+      "testimonial quote carousels",
+      "product image sliders"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T06:19:00.000Z"
+  }
+}

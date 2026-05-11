@@ -1,0 +1,52 @@
+.columns-quote > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+  align-items: center;
+}
+
+.columns-quote > div > div {
+  flex: 1;
+}
+
+.columns-quote > div > div:first-child picture {
+  display: block;
+}
+
+.columns-quote > div > div:first-child img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.columns-quote > div > div:last-child h4 {
+  font-family: var(--serif-font-family);
+  font-size: var(--heading-font-size-m);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin: 0 0 var(--spacing-m);
+}
+
+.columns-quote > div > div:last-child p {
+  font-size: var(--body-font-size-m);
+  font-weight: 500;
+  color: var(--muted-text);
+}
+
+@media (width >= 900px) {
+  .columns-quote > div {
+    flex-direction: row;
+    gap: var(--spacing-xl);
+  }
+
+  .columns-quote > div > div:first-child {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .columns-quote > div > div:last-child h4 {
+    font-size: var(--heading-font-size-l);
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.accenture.com/ch-en",
+  "path": "ch-en",
+  "timestamp": "2026-05-11T06:34:53.782Z",
+  "title": "Switzerland | Let There Be Change | Accenture",
+  "template": "homepage",
+  "blocks": [
+    "hero-video",
+    "cards-research",
+    "columns-quote",
+    "carousel-casestudy",
+    "cards-awards",
+    "columns-cta",
+    "cards-news"
+  ]
+}

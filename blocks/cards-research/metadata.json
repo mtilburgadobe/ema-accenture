@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-research",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-11T06:19:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.accenture.com/ch-en",
+    "originPage": "corporate homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "content-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + label + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "research report listings",
+      "case study showcases",
+      "content hub cards with full-bleed images",
+      "insight and perspective grids"
+    ],
+    "notSuitableFor": [
+      "simple feature lists without images",
+      "team member profiles",
+      "product catalog cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/ch-en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T06:19:00.000Z"
+  }
+}
